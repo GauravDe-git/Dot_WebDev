@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basics- III</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Talking about Tables a bit more, and Rowspans, Colspans -->
+
+    <table>
+      <tr>
+        <th colspan="2">Month</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Jan</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Feb</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>March</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>600</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- Rowspan example -->
+    <h3>Rowspan example</h3>
+    <table>
+      <tr>
+        <td>abcd</td>
+        <td>abcd</td>
+        <td>abcd</td>
+      </tr>
+      <tr>
+        <td>abcd</td>
+        <td rowspan="3">abcd</td>
+        <td>abcd</td>
+      </tr>
+      <tr>
+        <td>abcd</td>
+        <!-- Removed this row -->
+        <td>abcd</td>
+      </tr>
+      <tr>
+        <td>abcd</td>
+        <!-- Removed this row -->
+        <td>abcd</td>
+      </tr>
+      <tr>
+        <td>abcd</td>
+        <td>abcd</td>
+        <td>abcd</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- Table Classwork -->
+    <h3>Table Classwork, with styling</h3>
+    <table>
+      <tr>
+        <td rowspan="2">State of Health</td>
+        <td colspan="2">Fasting Value</td>
+        <td>After Eating</td>
+      </tr>
+      <tr>
+        <td>minimum</td>
+        <td>maximum</td>
+        <td>2 hr after Eating</td>
+      </tr>
+      <tr>
+        <td>healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>less than 140</td>
+      </tr>
+      <tr>
+        <td>Pre-Diabates</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+      </tr>
+      <tr>
+        <td>Diabetes</td>
+        <td>More than 126</td>
+        <td>NA</td>
+        <td>More than 200</td>
+      </tr>
+
+      <!-- Styling "Specific" Columns - using Colgroup -->
+
+      <colgroup>
+        <col span="" style="background-color: aqua" />
+        <col span="" style="background-color: greenyellow" />
+        <col span="" style="background-color: red" />
+      </colgroup>
+    </table>
+
+    <!-- * H/W  -->
+    <h3>Table table_homework</h3>
+    <img src="/table_homework.png" alt="" />
+
+    <!-- * H/W Apply rowgroup styling using tbody thead tfoot styling, since row group tag dsnt exist -->
+
+    <!-- * H/W - Html Cheatsheet last page - Read -->
+
+    <!--* Next class we will: 1. Links in more detail
+        2. Forms- remaining stuff
+        3. Semantic tags -->
+  </body>
+</html>
