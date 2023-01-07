@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CSS Basics I</title>
+
+    <style>
+        h1,h2{
+            background-color: aqua;
+        }
+        p{
+            background-color: red;
+        }
+        table,tr,td{   /* Combination Selector */
+            border: 5px solid black; 
+            padding: 0.2rem;
+        }
+        .green{
+            background-color: green;
+            font-size: larger;
+        }
+        .small{
+            font-size: small;
+        }
+        .large{
+            font-size: large;
+        }
+        #first-button{
+            color: red;
+            padding: 0.5rem;
+        }
+
+        /* Pseudo Class Selector */
+
+        #first-button:hover{
+            color: yellow;
+        }
+    </style>
+    <!-- * External CSS Style Sheet -->
+    <link rel="stylesheet" href="cssBasicsI.css"/>
+
+</head>
+<body>
+    
+<h1>This is my First heading</h1>
+<p>This is my first paragraph</p>
+<h2>This is my second heading</h2>
+<p>This is my second paragraph</p>
+
+<!-- Styling Table -->
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+
+<!-- Class Selector -->
+<p class="green">This is a paragraph with a class Green.</p>
+ 
+<!-- * Live Class Problem statement -->
+<!-- h1,h2,h3 font small, h4,h5,h6 font large -->
+<h1>Problem statement</h1>
+<h1 class="small">This is an H1</h1>
+<h2 class="small">This is an H2</h2>
+<h3 class="small">This is an H3</h3>
+<h4 class="large">This is an H4</h4>
+<h5 class="large">This is an H5</h5>
+<h6 class="large">This is an H6</h6>
+
+<!-- #ID Selector -->
+
+<button id="first-button" on>My Button!</button> 
+
+<!-- * H/W: Universal Selector, Nested Selector, Attribute Selector.
+* - Read, and - Code with these -->
+
+<!-- INLINE CSS -->
+<div style="font-style: italic;font-size: larger;">CSS Box Model is shown below</div>
+
+<!-- Box Model -->
+<div class="box" id="org">A</div>
+<div class="box" id="wht">B</div>
+<div class="box" id="grn">C</div>
+
+<!-- Project Idea- HEX ColorWheel Tool -->
+
+<!-- * H/W Fonts -
+    *Font-family, Font-Weight, Font-style, Emphasis & Importance, External Fonts. -->
+
+<!-- * Write 800+ words on a BorderBox element to see what happens -->
+
+
+<!-- * Generate a card simmilar to codehelp purchase course -->
+
+<!-- * H/W- Difference between 1% and 1 VW unit -->
+
+</body>
+</html>
