@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doubt Session</title>
+    <style>
+      table,
+      th,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TABLE PREVIOUS HOMEWORK -->
+
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+          <th>Begin</th>
+          <th>End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2">08:00 am</td>
+          <td rowspan="2">05:00 pm</td>
+          <td>Introduction to XML</td>
+        </tr>
+        <tr>
+          <td>Validity : DTD and Relax NG</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Tuesday</td>
+          <td>08:00 am</td>
+          <td>11:00 am</td>
+          <td>XPath</td>
+        </tr>
+        <tr>
+          <td>11:00 am</td>
+          <td>02:00 pm</td>
+          <td rowspan="2">XSL Transformation</td>
+        </tr>
+        <tr>
+          <td>02:00 pm</td>
+          <td>05:00 pm</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>08:00 am</td>
+          <td>12:00 pm</td>
+          <td>XSL Formatting Objects</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <!-- IFrames: Basically a way to Embed another website in your website, like a youtube video, or a facebook page-->
+
+    <iframe src="https:wikipedia.com" frameborder="1"></iframe>
+
+    <!-- * H/W Audio and Video in HTML -->
+
+    <!-- The Form- Unwrap Contact Us -->
+    <h1>Welcome To UnWrap Contact Form!</h1>
+    <h2>Contact Us Form:</h2>
+    <form action="https://www.google.com" style="border: 1px solid black; width: 25%;">
+      <label for="name">Name: </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+      /><br />
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+      /><br />
+      <label for="contact">Contact:</label>
+      <input
+        type="tel"
+        name="contact"
+        id="contact"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      /><br />
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender">
+        <option value="select">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <label for="date">Date of Birth</label>
+      <input type="date" name="date" id="date" /><br />
+      Rating:
+      <input type="radio" name="rating" id="rating1" value="1" />
+      <label for="rating1">1</label>
+      <input type="radio" name="rating" id="rating2" value="2" />
+      <label for="rating2">2</label>
+      <input type="radio" name="rating" id="rating3" value="3" />
+      <label for="rating3">3</label>
+      <input type="radio" name="rating" id="rating4" value="4" />
+      <label for="rating4">4</label>
+      <input type="radio" name="rating" id="rating5" value="5" />
+      <label for="rating5">5</label><br />
+      <label for="msg">Enter Your Message:</label><br />
+      <textarea
+        name="msg"
+        id="msg"
+        cols="30"
+        rows="5"
+        placeholder="Enter your text"
+      ></textarea
+      ><br />
+      <input type="submit" value="Submit" id="submit" name="submit" />
+      <input type="reset" value="Reset" id="reset" name="reset" />
+      <footer>
+        <a href="http://www.youtube.com">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-512.png"
+            alt=""
+            height="50"
+            width="50"
+          />
+        </a>
+        <a href="http://www.instagram.com">
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png"
+            alt=""
+            height="50"
+            width="50"
+          />
+        </a>
+        <a href="https://www.telegram.com">
+          <img
+            src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-512.png"
+            alt=""
+            height="50"
+            width="50"
+          />
+        </a>
+      </footer>
+    </form>
+  </body>
+</html>
