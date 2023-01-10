@@ -1,0 +1,123 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(red,blue);
+}
+
+.radial{
+    height: 200px;
+    width: 150px;
+    margin-top: 10px;
+    background-image: radial-gradient(red,blue,orange);
+}
+
+h1{
+    text-shadow: 2px 2px 3px red;
+}
+
+.box-shadow{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 13px 13px 15px green;
+}
+
+.dimension-max{
+    margin-top: 30px;
+    border: 1px solid black;
+    max-height: 100px;
+    max-width: 300px;
+    overflow: scroll;
+}
+
+.dimension-min{
+    margin-top: 30px;
+    border: 1px solid black;
+    min-height: 200px;
+    width: 300px;
+}
+
+.overflow-auto{
+    border: 1px solid black;
+    margin-top: 30px;
+    width: 350px;
+    max-height: 100px;
+    overflow: auto;
+}
+
+.relative{
+    border: 1px solid black;
+    width: 300px;
+    background-color: yellow;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.fixed{
+    border: 1px solid black;
+    width: 300px;
+    background-color: aqua;
+    position: fixed;
+    top: 30px;
+    left: 850px;
+}
+
+.absolute{
+    border: 1px solid black;
+    width: 300px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 30px;
+    left: 1000px;
+}
+
+.sticky{
+    border: 1px solid black;
+    width: 300px;
+    background-color: pink;
+    position: sticky;
+    top: 30px;
+    left: 1000px;
+}
+
+.translate{
+    background-color: aqua;
+    width: 300px;
+    transform: translate(100px,200px);
+}
+
+.rotate{
+    background-color: aqua;
+    transform: rotate(45deg);
+    width: 200px;
+}
+
+.scale{
+    margin-top: 300px;
+    background-color: rgb(112, 182, 110);
+    transform: scale(2,2);
+    width: 200px;
+}
+
+.skew{
+    background-color: rgb(220, 230, 131);
+    transform: skew(40deg);
+    width: 200px;
+}
+
+.translate3D{
+    background-color: aqua;
+    width: 300px;
+    transform: translate(100px,100px,100px);
+    transform: perspective(100px);
+}
+
+.Parent3D{
+    transform: perspective(100px);
+}
+
+
+
+
