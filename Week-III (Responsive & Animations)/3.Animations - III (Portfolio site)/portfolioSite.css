@@ -7,7 +7,7 @@
 
 #wrapper{
     height: 100vh;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -146,7 +146,7 @@ a{
 
     50%{
         filter: grayscale(1);
-        transform: scale(0);
+        transform: scale(0.8);
         box-shadow: 3px 3px 10px black;
     }
 
@@ -188,17 +188,17 @@ a{
 
 @keyframes cubeRotate {
     0%{
-        transform: rotateY(0deg);
+        transform: rotateX(0deg);
         transform: translateY(0px);
     }
 
     50%{
-        transform: rotateY(180deg);
+        transform: rotateX(90deg);
         transform: translateY(-12px);
     }
 
     100%{
-        transform: rotateY(360deg);
+        transform: rotateX(120deg);
         transform: translateY(0px);
     }
 }
@@ -243,6 +243,221 @@ a{
         left: 3%;
         bottom: 48%;
     }
-    
 }
 
+/* Projects Section */
+.project-section{
+    background-color: rgb(231, 231, 231);
+    margin: 4rem;
+}
+
+.page-header{
+    color: orangered;
+    font-size: 80px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.project-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card{
+    width: 90%;
+    height: 550px;
+    /* background-image: url(./Assets/projects/Project1.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.project-card::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+    transform: scaleX(1);
+    z-index: 0;
+}
+
+.project-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+.project-card:hover::before{
+    transform: scaleX(1);
+}
+
+.project-number{
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+    display: none;
+}
+
+.project-card:hover .project-number{
+    display: block;
+}
+
+.project-number-right{
+    right: -40px;
+    top: -45px;
+}
+
+.project-number-left{
+    left: -40px;
+    top: -45px;
+}
+
+.project-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition: all 0.5s;
+}
+
+.project-content-left{
+    left: 10%;
+}
+
+.project-content-right{
+    right: 10%;
+}
+
+.project-skills-container{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-skill{
+    width: 40px;
+}
+
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.project-subheading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.btn-grp{
+    display: flex;
+    gap: 0.9rem;
+
+}
+
+.project-card:hover .project-content{
+    transform: scale(1.1);
+}
+
+#project-1{
+    background-image: url(./Assets/projects/Project1.png);
+}
+
+#project-2{
+    margin-left: 120px;
+    background-image: url(./Assets/projects/Project2.png);
+}
+
+#project-3{
+    background-image: url(./Assets/projects/Project3.png);
+}
+
+#project-4{
+    margin-left: 120px;
+    background-image: url(./Assets/projects/Project4.png);
+}
+
+/* Skills Section */
+
+.skills-container{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+}
+
+.skill-container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-container-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skills-fade-text{
+    position: absolute;
+    font-size: 15em;
+    font-style: bold;
+    color: rgb(231, 231, 231);
+    bottom: -34.5%;
+    right: -25%;
+    user-select: none;
+}
+
+.skills-logo{
+    width: 90px;
+}
+
+.skill-heading{
+    font-size: 50px;
+    font-style: bold;
+    color: orangered;
+    line-height: 50px;
+}
+
+.caps{
+    font-size: 90px;
+}
+
+.skill-subheading{
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+}
+
+.skill-subheading p{
+    margin: 15px 0;
+}
