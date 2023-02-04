@@ -5,21 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & Tailwind CSS Starter Pack</title>
+    <title>Unwrap - Discord</title>
 
     <link rel="stylesheet" href="./main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <main class="flex justify-center gap-4 flex-col min-h-screen">
-        <h1 class="text-3xl text-center font-bold underline">
-            HTML & Tailwind CSS Starter Pack
-        </h1>
-        <p class="text-center text-xl">
-            This is a starter pack for HTML & Tailwind CSS projects.
-        </p>
-        <img src="https://bit.ly/3wsmzTy" alt="meme" class="mx-auto">
-    </main>
+    <div class="bg-[#404EED] font-ggSans">
+        <nav class="text-[#fff] max-w-[1200px] mx-auto flex justify-between h-[72px] items-center xl:px-0 px-7">
+            <!-- logo -->
+            <div>
+                <img src="./images/logo.svg" alt=""/>
+            </div>
+            <!-- nav options -->
+            <div class="hidden xl:flex gap-5 font-ggSans font-[600] font-[16px]">
+                <a href="#" class="capitalize hover:underline">Download</a>
+                <a href="#" class="capitalize hover:underline">Nitro</a>
+                <a href="#" class="capitalize hover:underline">Discover</a>
+                <a href="#" class="capitalize hover:underline">Safety</a>
+                <a href="#" class="capitalize hover:underline">Support</a>
+                <a href="#" class="capitalize hover:underline">Blog</a>
+                <a href="#" class="capitalize hover:underline">Careers</a>
+            </div>
+            <!-- open discord icon -->
+            <div class="hidden xl:flex">
+                <a href="#">
+                    <button class="bg-[#fff] px-4 self-center p-2 text-[#2c2f33] rounded-full ">
+                        Open Discord
+                    </button>
+                </a>
+            </div>
+
+            <!-- hamburger -->
+            <div class="xl:hidden block">
+                <i class="fa-solid fa-bars text-[23px]"> </i>
+            </div>
+        </nav>
+    </div>
+
+    <div class="bg-[#404EED] -mt-1 relative w-full">
+        <img src="./images/Image0.svg" class="hidden xl:block absolute z-10 bottom-0 top-auto scale-x-[135] "/>
+        
+        <img src="./images/Image1.svg" class="hidden xl:block absolute z-10 bottom-0 top-auto scale-x-[135] "/>
+
+        <img src="./images/Image2.svg" class="hidden xl:block absolute z-10 bottom-0 top-auto scale-x-[135] "/>
+    </div>
+
+    
 </body>
 
 </html>
