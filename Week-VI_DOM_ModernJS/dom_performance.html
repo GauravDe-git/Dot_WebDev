@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let arr = [1,2,3,4,5,6,7,8,9,10];
+
+        //performance with normal for loop
+        let p1 = performance.now();
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        let p2 = performance.now();
+        console.log(p2 - p1);
+
+        //performance with for...of loop
+        let p3 = performance.now();
+        for (const iterator of arr) {
+            console.log(iterator);
+        }
+        let p4 = performance.now();
+        console.log(p4 - p3);
+        /*
+        performance.now() to measure time in ms
+
+        'fragment' can be used to optimize some code where we have to insert many elements, but dont wanna create a unnecessary div
+
+        let fragment = document.createDocumentFragment();
+        for(let i = 1; i<=100;++i)
+        {
+            let p = document.createElement('p');
+            p.textContent = i;
+            fragment.appendChild(p);
+        }
+        document.body.appendChild(fragment); //1 reflow, 1 repaint
+
+
+        setTimeOut(fn, delay) 
+        */
+    </script>
+</body>
+</html>

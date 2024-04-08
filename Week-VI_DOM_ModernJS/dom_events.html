@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //<!-- * Events -->
+        /*
+        monitorEvents(document) - will show all dom events in console
+        unmonitorEvents(document) - to turn it off
+
+        addEventListener('event name', fn to execute)
+        removeEventListener('event name', the same fn as the add event)
+
+        ~The event itself is actually passed in the fn as a param-
+        E.g. addEventListener('click', function(theEvent) {console.log(theEvent)})
+
+        <!--* The prevent default
+        E.g. 
+        let link = document.querySelector('a');
+        link.addEventListener('click', function(theEvent) {theEvent.preventDefault()}) //prevent the default link tag behaviour
+
+        <!--* Event.target
+        E.g.
+        link.addEventListener('click', function(theEvent) 
+        {
+            console.log(theEvent.target)
+        }) //get the element that triggered the event
+
+        eg. if only wanna do action on that certain element
+        if (event.target.nodeName === 'span')
+        {
+            console.log('span clicked' + event.target.textContent); 
+        }
+        */
+    </script>
+</body>
+</html>
